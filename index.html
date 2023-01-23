@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House Practice</title>
+    <!-- style with css link -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style with tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              gray: "#777777",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+              manrope1:['Manrope', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header part is here -->
+    <header>
+      <div
+        class="banner container mx-auto w-11/12 md:w-3/4 mt-12 lg:flex gap-x-24"
+      >
+        <div class="banner-left w-11/12 lg:w-1/2">
+          <h1 class="text-3xl md:text-6xl pb-8 font-manrope font-extrabold">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p
+            class="text-1xl md:text-1xl text-gray pb-8 font-manrope1 font-normal"
+          >
+            Tea and Botanical Solutions Supplier Give Optimum <br />
+            Satisfaction To Your Taste Buds.
+          </p>
+          <button
+            class="bg-gradient-to-r from-amber-500 to-red-600 py-4 px-6 rounded-xl text-white font-manrope1"
+          >
+            Explore More
+            <img class="inline" src="images/arrow.png" alt="arrowpng" />
+          </button>
+        </div>
+        <div class="banner-right relative">
+          <img
+            class="min-w-full"
+            src="images/banner.png"
+            alt="banner picture a juice"
+          />
+          <div
+            class="md:flex bg-white shadow-lg px-6 py-4 rounded-md w-5/12 items-center justify-center md:absolute left-32 bottom-2"
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill=" "
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10 flex justify-center items-center pr-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 class="text-2xl font-manrope1">5.00</h1>
+              <p class="font-manrope1">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main part is here -->
+    <main class="w-11/12 md:w-3/4 mx-auto">
+      <!-- section part one is start from here -->
+      <section class="container py-24">
+        <div class="text-center">
+          <h1 class="text-4xl mb-3 font-manrope font-extrabold">Our Featured Products</h1>
+          <p class="text-1xl font-manrope1">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, <br />
+            by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+        </div>
+        <div class="my-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center justify-center gap-4 font-manrope1"
+          >
+            <div class="bg-gradient-to-b from-zinc-200 to-white rounded-xl">
+              <img class="inline py-8" src="images/tea-1.png" alt="milk tea" />
+              <h1 class="text-2xl">Milk Tea</h1>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+            <div class="bg-gradient-to-b from-zinc-200 to-white rounded-xl">
+              <img class="inline py-8" src="images/tea-2.png" alt="black tea" />
+              <h1 class="text-2xl">Black Tea</h1>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+            <div class="bg-gradient-to-b from-zinc-200 to-white rounded-xl">
+              <img class="inline py-8" src="images/tea-3.png" alt="lemon tea" />
+              <h1 class="text-2xl">Lemon Tea</h1>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+            <div class="bg-gradient-to-b from-zinc-200 to-white rounded-xl">
+              <img class="inline py-8" src="images/tea-4.png" alt="lemon tea" />
+              <h1 class="text-2xl">Green Tea</h1>
+              <p>
+                Creamer could be replaced <br />
+                by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- second part is start from here -->
+      <section class="grid grid-cols-1 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 gap-6 text-center p-0 md:p-10 mb-10"
+        >
+          <div
+            class="hidden md:inline bg-gradient-to-r from-red-200 to-white rounded-xl"
+          ></div>
+          <div
+            class="md:row-span-2 bg-gradient-to-r from-red-200 to-red-50 rounded-xl"
+          >
+            <img class="inline p-10 md:py-16" src="images/fresh-1.png" alt="" />
+          </div>
+          <div
+            class="md:row-span-2 bg-gradient-to-r from-zinc-200 to-zinc-100 rounded-xl"
+          >
+            <img class="inline p-10" src="images/fresh-2.png" alt="" />
+          </div>
+          <div
+            class="hidden md:inline bg-gradient-to-r from-zinc-200 to-white rounded-xl"
+          ></div>
+        </div>
+        <div>
+          <div class="m-10 justify-between sm:order-1">
+            <h1 class="text-4xl mb-10 font-manrope font-extrabold">
+              Great Tea, Freshly <br />
+              Presented
+            </h1>
+            <p class="mb-10 font-manrope1">
+              The meaning of gong cha is chanese is to provide the best tea to
+              emperor from all possessions . It represents the highest quality
+              and self expectation. Establishing in 2006, Gong cha had been
+              deeply appreciated by its custoers because of good words of mouth
+              and unique customized service orginated from Taiwan.
+            </p>
+            <h2 class="mb-8 font-manrope font-extrabold">Unique Taste</h2>
+            <p class="mb-10 font-manrope1">
+              A Unique and different style from other teapots gives a luxurious
+              and minimalist impression
+            </p>
+            <h2 class="mb-8 font-manrope font-extrabold">Premium Quality</h2>
+            <p class="mb-10 font-manrope1">
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- maybe fourth section , is start from here -->
+      <section>
+        
+      </section>
+    </main>
+  </body>
+</html>
